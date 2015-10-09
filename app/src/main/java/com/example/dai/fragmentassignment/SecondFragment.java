@@ -28,19 +28,13 @@ public class SecondFragment extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_second, container, false);
         tv = (TextView) v.findViewById(R.id.textView);
-        Bundle b = getArguments();
-        if (b != null) {
-
-            update(b);
-        } else {
-            Log.i("------------", "isnull");
-        }
 
         return v;
     }
 
-    public void update(Bundle bundle) {
-        tv.setText(bundle.getString("data", "not received"));
+    public void update(String s) {
+
+        tv.setText(s);
     }
 
 

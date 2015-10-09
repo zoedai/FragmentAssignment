@@ -24,23 +24,26 @@
         android:background="#123456"
         tools:layout="@layout/fragment_first" />
 
-  <!--  <LinearLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:id="@+id/container"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="1" />
--->
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:name="com.example.dai.fragmentassignment.SecondFragment"
+        android:id="@+id/fragment2"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_second" />
 
 
-        <fragment
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:name="com.example.dai.fragmentassignment.SecondFragment"
-            android:id="@+id/fragment2"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="1"
-            tools:layout="@layout/fragment_second" />
+</LinearLayout>
+
 
 
 
